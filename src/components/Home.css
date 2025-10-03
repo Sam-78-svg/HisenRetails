@@ -1,0 +1,48 @@
+.mainContainer {
+    height: auto;
+    width: 100%;
+    padding: 2rem;
+    background-color: #a56041;
+}
+
+.heroSection {
+    height: 15rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#heroSection {
+    border: 2px solid black;
+    border-radius: 12px;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #dab5a3;
+    opacity: .6;
+}
+
+#heroSection h1 {
+    font-size: 34px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#heroSection p {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#heroSection::after {
+    left: 10px;
+    text-shadow: 3px 3px lightgreen;
+}
+
+.cardSection {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
