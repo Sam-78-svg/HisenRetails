@@ -14,6 +14,7 @@ function App() {
 
   return (
     <Router>
+      {/* Headeer and Navigation Section */}
       <header>
         <nav className="navbar">
           <img src="#" alt="WebsiteLogo" id='websiteLogo' />
