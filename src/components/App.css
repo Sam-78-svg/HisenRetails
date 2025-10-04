@@ -97,57 +97,41 @@
   transition: max-height 0.3s ease-in;
 }
 
-@media (min-width: 768px) {
-
-  .nav-items,
-  .nav-items.open {
-    max-height: none;
-    overflow: visible;
-    transition: none;
-  }
-}
-
-@media screen and (max-width:768px) {
-
-  .nav-items {
-    visibility: hidden;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: #3f4a5c;
-    width: 30%;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 0;
-    z-index: 999;
-  }
-}
-
-
-
 /* Css for the footer section */
 .footer {
-  background-color: #0b0f14;
+  background-color: #252b33;
   margin-top: 0;
   padding: 10px 0;
-  bottom: 0;
   width: 100%;
+  padding-bottom: 0;
 }
 
 .footerLinks {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  list-style: none;
   align-items: center;
   margin-bottom: 5px;
 }
 
+
 .footerLinks ul {
   padding: 2rem 1rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
 }
+
+.footerLinks h1 {
+  color: rgb(232, 104, 5);
+  margin-bottom: 5px;
+  font-size: 24px;
+  border-bottom: 2px solid white;
+}
+
+
 
 .footerLinks li {
   color: white;
@@ -162,15 +146,56 @@
 
 .footer p {
   color: white;
-  font-size: 14px;
+  font-size: 18px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #101313;
+  height: 2.5rem;
 }
 
 
-/* Media queries  */
+/* Media Queries */
 
-/* Media queries for footer section */
+@media (min-width: 768px) {
+
+  .nav-items,
+  .nav-items.open {
+    max-height: none;
+    overflow: visible;
+    transition: none;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .nav-items {
+    visibility: hidden;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #3f4a5c;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    z-index: 999;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #menuIcon {
+    display: block;
+  }
+
+}
+
 @media screen and (max-width: 480px) {
-  .footerLinks ul {
+  .footer ul {
     text-align: left;
   }
 }

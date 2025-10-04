@@ -14,7 +14,6 @@ function App() {
 
   return (
     <Router>
-      {/* Headeer and Navigation Section */}
       <header>
         <nav className="navbar">
           <img src="#" alt="WebsiteLogo" id='websiteLogo' />
@@ -47,28 +46,32 @@ function App() {
       <footer className="footer">
         <section className='footerLinks'>
           <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
+            <h1>Sponsers</h1>
+            <li><a href="https://www.nike.com" target="_blank" rel="noopener noreferrer">Nike</a></li>
+            <li><a href="https://www.adidas.com" target="_blank" rel="noopener noreferrer">Adidas</a></li>
+            <li><a href="https://www.puma.com" target="_blank" rel="noopener noreferrer">Puma</a></li>
+            <li><a href="https://www.reebok.com" target="_blank" rel="noopener noreferrer">Reebok</a></li>
           </ul>
           <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
+            <h1>Company</h1>
+            <li><Link to="/about">About</Link></li>
+            <li><a href="https://www.hisenretails.com/careers" target="_blank" rel="noopener noreferrer">Careers</a></li>
+            <li><a href="https://www.hisenretails.com/blog" target="_blank" rel="noopener noreferrer">Blog</a></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
           <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
+            <h1>Support</h1>
+            <li><a href="https://www.hisenretails.com/help" target="_blank" rel="noopener noreferrer">Help Center</a></li>
+            <li><a href="https://www.hisenretails.com/shipping" target="_blank" rel="noopener noreferrer">Shipping</a></li>
+            <li><a href="https://www.hisenretails.com/returns" target="_blank" rel="noopener noreferrer">Returns</a></li>
+            <li><a href="https://www.hisenretails.com/faq" target="_blank" rel="noopener noreferrer">FAQ</a></li>
           </ul>
           <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
+            <h1>Legal</h1>
+            <li><a href="https://www.hisenretails.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a></li>
+            <li><a href="https://www.hisenretails.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+            <li><a href="https://www.hisenretails.com/cookies" target="_blank" rel="noopener noreferrer">Cookie Policy</a></li>
+            <li><a href="https://www.hisenretails.com/accessibility" target="_blank" rel="noopener noreferrer">Accessibility</a></li>
           </ul>
         </section>
         <p>&copy; 2024 Hisen.retails. All rights reserved.</p>
