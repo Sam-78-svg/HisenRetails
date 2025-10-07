@@ -15,8 +15,8 @@ function TrendingProducts() {
             {products.filter(pro => pro.id <= 6).map(product => (
                 <div className="card" key={product.id} >
                     <img src={product.thumbnail} alt={product.title} />
-                    <h2>{product.title}</h2>
-                    <p>{product.description}</p>
+                    <h2><b style={{ fontSize: '20px' }}>Name:</b>{product.title}</h2>
+                    <p><b style={{ fontSize: '20px' }}>Description:</b>{product.description}</p>
                 </div>
             ))}
         </div>

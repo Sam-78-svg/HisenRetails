@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Home from './Home'
+import Products from './Product';
+import About from './About';
+import Contact from './Contact';
 import './App.css'
 
-const Products = () => <div>Products Page</div>
-const About = () => <div>About Page</div>
-const Contact = () => <div>Contact Page</div>
 
 function App() {
   const [navOpen, setNavOpen] = useState(false);

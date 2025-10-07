@@ -17,9 +17,9 @@ function Home() {
                 {/* cards will be displayed here */}
 
                 <section className="cardSection">
+                    <h1 className="trepHeading">Trending this weak</h1>
                     <TrendingProducts />
                 </section>
-
                 {/*  */}
             </div>
 

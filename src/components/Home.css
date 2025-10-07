@@ -46,3 +46,15 @@
     flex-wrap: wrap;
     margin-top: 2rem;
 }
+
+.cardSection .trepHeading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 1rem;
+    color: #e7eaf6;
+    background-color: #3b3a3a;
+    padding: 1rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
