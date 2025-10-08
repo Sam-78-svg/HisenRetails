@@ -18,7 +18,7 @@ function Home() {
 
                 <section className="cardSection">
                     <h1 className="trepHeading">Trending this weak</h1>
-                    <TrendingProducts />
+                    <TrendingProducts numberOfProducts={6} />
                 </section>
                 {/*  */}
             </div>

@@ -1,0 +1,18 @@
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: aliceblue;
+
+}
+
+aside {
+    flex: 10%;
+    padding: 1rem;
+
+}
+
+main {
+    flex: 80%;
+    padding: 1rem;
+}
