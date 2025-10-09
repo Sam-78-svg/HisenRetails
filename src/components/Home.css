@@ -44,6 +44,7 @@
     gap: 2rem;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 0;
     margin-top: 2rem;
 }
 
@@ -55,6 +56,6 @@
     margin-bottom: 1rem;
     color: #e7eaf6;
     background-color: #3b3a3a;
-    padding: 1rem;
+    padding: 2rem;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }

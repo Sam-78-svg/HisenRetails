@@ -4,6 +4,7 @@ import Home from './Home'
 import Products from './Product';
 import About from './About';
 import Contact from './Contact';
+import Cart from './cart';
 import './App.css'
 
 
@@ -11,6 +12,7 @@ function App() {
   const [navOpen, setNavOpen] = useState(false);
 
   const handleMenuClick = () => setNavOpen(!navOpen);
+  const [items, setItems] = useState(0)
 
   return (
     <Router>
@@ -24,6 +26,7 @@ function App() {
               <li><Link to="/about" onClick={() => setNavOpen(false)}>About</Link></li>
               <li><Link to="/contact" onClick={() => setNavOpen(false)}>Contact</Link></li>
             </ul>
+            <button className='cartButton'><Link to="/cart" onClick={() => setNavOpen(false)}><i className="fa fa-cart-plus" aria-hidden="true"></i><sup className='itemsInCart'>{items}</sup></Link></button>
             <button id='loginBtn' className='loginBtn' role='button'>
               Log In <i className="fa fa-user" aria-hidden={navOpen}></i>
             </button>
@@ -39,6 +42,7 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </main>
 

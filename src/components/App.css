@@ -1,4 +1,7 @@
 /* Css for the navigatin section */
+.main-content {
+  padding: 0;
+}
 
 .navbar {
   height: 60px;
@@ -42,6 +45,26 @@
   color: rgb(51, 28, 28);
   transform: scale(1.1);
   border-bottom: 2px solid blue;
+}
+
+.cartButton {
+  display: flex;
+  gap: 5px;
+}
+
+.cartButton i {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.itemsInCart {
+  background-color: red;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .loginBtn {
@@ -198,4 +221,11 @@
   .footer ul {
     text-align: left;
   }
+
+  .cartButton span {
+    visibility: hidden;
+    font-size: 0;
+  }
+
+  car
 }

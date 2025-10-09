@@ -1,8 +1,16 @@
-.container {
+.productHeading {
+    text-align: center;
+    font-size: 36px;
+    padding: 3rem 0;
+    background: linear-gradient(diagonaly, red, blue, green);
+}
+
+.productContainer {
     width: 100%;
     height: auto;
     display: flex;
     background-color: aliceblue;
+    padding: 0;
 
 }
 
@@ -15,4 +23,18 @@ aside {
 main {
     flex: 80%;
     padding: 1rem;
+}
+
+@media screen and (max-width:480px) {
+    .productContainer {
+        flex-direction: column;
+    }
+
+    aside {
+        flex: 0;
+    }
+
+    main {
+        flex: 0;
+    }
 }

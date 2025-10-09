@@ -11,7 +11,6 @@ function Products() {
             .then(res => res.json())
             .then(data => setProducts(data.products || []));
     }, []);
-    console.log(products.length)
 
     // Fix: Use correct comparison operator and handle "All" case
     const filteredProducts = categoryName === "All"
@@ -20,8 +19,8 @@ function Products() {
 
     return (
         <>
-            <h1>The Following are Available products!</h1>
-            <div className="container">
+            <h1 className="productHeading">The Following are Available products!</h1>
+            <div className="productContainer">
                 <aside>
                     <h1>Category:</h1>
                     <form>
@@ -46,8 +45,14 @@ function Products() {
                             {filteredProducts.map(product => (
                                 <div className="card" key={product.id}>
                                     <img src={product.thumbnail} alt={product.title} />
-                                    <h2><b style={{ fontSize: '20px' }}>Name:</b> {product.title}</h2>
-                                    <p><b style={{ fontSize: '20px' }}>Description:</b> {product.description}</p>
+                                    <h2 className="productName"><b style={{ fontSize: '20px' }}>Name:</b> {product.title}</h2>
+                                    <p className="description"><b style={{ fontSize: '20px' }}>Description:</b> {product.description}</p>
+                                    <p className="productPrice">${product.price}</p>
+                                    <button class="addToCart">
+                                        <div class="button-overlay"></div>
+                                        <span>Add</span>
+
+                                    </button>
                                 </div>
 
                             ))}
